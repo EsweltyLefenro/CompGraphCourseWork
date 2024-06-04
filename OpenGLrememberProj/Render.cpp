@@ -325,6 +325,15 @@ void keyDownEvent(OpenGL* ogl, int key)
 
 	if (key == 'Q')
 		Time = 0;
+
+	if (key == 'E')
+	{
+		oko = !oko;
+	}
+	if (key == 'W')
+	{
+		shine = !shine;
+	}
 }
 
 void keyUpEvent(OpenGL* ogl, int key)
@@ -647,15 +656,6 @@ void Render(OpenGL* ogl)
 	glVertex3d(-60, 60, 0);
 	glEnd();
 	glPopMatrix();
-
-	if (OpenGL::isKeyPressed('E'))
-	{
-		oko = !oko;
-	}
-	if (OpenGL::isKeyPressed('W'))
-	{
-		shine = !shine;
-	}
 
 	if (oko) {
 		s[1].UseShader();
