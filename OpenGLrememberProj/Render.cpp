@@ -324,12 +324,15 @@ void keyDownEvent(OpenGL* ogl, int key)
 	}
 
 	if (key == 'Q')
+	{
 		Time = 0;
+	}
 
 	if (key == 'E')
 	{
 		oko = !oko;
 	}
+
 	if (key == 'W')
 	{
 		shine = !shine;
